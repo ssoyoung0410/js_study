@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>반응속도 테스트</title>
+    <style>
+       #screen {
+         width:500px; height: 200px;
+         text-align: center;
+         line-height: 200px;
+         user-select: none;
+       }
+       #screen.waiting {
+         background: aqua;
+       }
+       #screen.ready {
+         background: red;
+         color:#fff;
+       }
+       #screen.now {
+         background: greenyellow;
+       }
+    </style>
+  </head>
+  <body>
+      <div id="screen" class="waiting">클릭해서 시작하세요</div>
+      <script src='반응속도.js'></script>
+  </body>
+</html>
