@@ -26,7 +26,9 @@ var 타임아웃;
 
     } else if (스크린.classList.contains('now')) { //초록색 --> 파란색
        끝시간 = new Date(); //초록색으로 바뀌고 내가 스크린을 클릭하여 파란색으로 바뀌는 그 시간이 끝시간이 됨 .
-      console.log('반응속도', 끝시간 - 시작시간,'ms');
+      const time = body.createElement('div');
+      time.textContent = '반응속도' + 끝시간 - 시작시간+'ms';
+      //console.log('반응속도', 끝시간 - 시작시간,'ms');
       기록.push(끝시간 - 시작시간);
       시작시간 = null;
       끝시간 = null;
