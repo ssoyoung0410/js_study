@@ -28,6 +28,7 @@ var 타임아웃;
        끝시간 = new Date(); //초록색으로 바뀌고 내가 스크린을 클릭하여 파란색으로 바뀌는 그 시간이 끝시간이 됨 .
       const time = body.createElement('div');
       time.textContent = '반응속도' + 끝시간 - 시작시간+'ms';
+      document.body.append(time);
       //console.log('반응속도', 끝시간 - 시작시간,'ms');
       기록.push(끝시간 - 시작시간);
       시작시간 = null;
